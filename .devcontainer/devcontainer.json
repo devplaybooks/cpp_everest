@@ -24,11 +24,7 @@
       "settings": {
         "clangd.arguments": [
           "--compile-commands-dir=${workspaceFolder}/build"
-        ],
-        "files.exclude": {
-          "**/CODE_OF_CONDUCT.md": true,
-          "**/LICENSE": true
-        }
+        ]
       },
       "extensions": [
         "ms-vscode.cpptools-extension-pack",
