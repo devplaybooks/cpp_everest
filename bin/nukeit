@@ -5,6 +5,11 @@ if [ -d "build" ]; then
     echo "💣️ build nuked"
 fi
 
+if [ -d "dist" ]; then
+    rm -rf dist
+    echo "💣️ dist nuked"
+fi
+
 if [ -d "cmake-build-debug" ]; then
     rm -rf cmake-build-debug
     echo "💣️ cmake-build-debug nuked"
