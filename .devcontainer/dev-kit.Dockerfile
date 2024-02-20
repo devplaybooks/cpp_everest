@@ -1,12 +1,12 @@
 FROM mcr.microsoft.com/devcontainers/cpp:dev-debian
 
 RUN apt-get update \
-  && apt-get install --no-install-recommends -y \
-    clang-tidy \
-    clangd \
-    ninja-build \
-    python3-pip \
-    lcov
+    && apt-get install --no-install-recommends -y \
+        clang-tidy \
+        clangd \
+        ninja-build \
+        python3-pip \
+        lcov
 
 # additional packages
 RUN apt-get install --no-install-recommends -y \
