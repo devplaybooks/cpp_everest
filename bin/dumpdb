@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+sqlite3 tests/resources/unittest_device_model.db -batch .dump

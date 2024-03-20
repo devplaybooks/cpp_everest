@@ -31,7 +31,8 @@ RUN apt-get install --no-install-recommends -y \
         rust-all \
         # required by gcovr
         libxml2-dev \
-        libxslt1-dev
+        libxslt1-dev \
+        sqlite3
 
 # clean up apt
 RUN apt-get clean \
