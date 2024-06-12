@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+ARG1=${1:-K08}
+
+# build/tests/ocpp_v201_utils_tests 
+ninja -j$(nproc) -C build install
+dosync
+build/tests/libocpp_unit_tests  --gtest_filter="*$ARG1*"
