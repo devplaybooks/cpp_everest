@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+mkdir -p ./dist/share/everest/tests/profiles/V16/json
+mkdir -p ./dist/share/everest/tests/profiles/V201/json
+
+cp -r ./tests/lib/ocpp/v201/json ./dist/share/everest/tests/profiles/V201
+# mv /tmp/EVerest/libocpp/json/v201/json /tmp/EVerest/libocpp/json/v201
+
+cp -r ./tests/lib/ocpp/v16/json ./dist/share/everest/tests/profiles/V16
+# mv /tmp/EVerest/libocpp/json/v16/json /tmp/EVerest/libocpp/json/v16
+
+ls -lAFR ./dist/share/everest/tests/profiles/
